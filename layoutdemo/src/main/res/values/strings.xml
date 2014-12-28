@@ -27,5 +27,5 @@
     <string name="Number3">3</string>
     <string name="Number0">0</string>
     <string name="Point">.</string>
-    <string name="EquaLog">=</string>
+    <string name="EqualLog">=</string>
 </resources>

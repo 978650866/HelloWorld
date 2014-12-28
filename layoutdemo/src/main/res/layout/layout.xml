@@ -13,6 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <EditText
+            android:inputType="number"
             android:id="@+id/mEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -27,11 +28,12 @@
         <Button
             android:id="@+id/mButton_mc"
             android:text="@string/mc"
-            android:layout_width="0dip"
             android:layout_weight="1"
+            android:layout_width="0dip"
             android:layout_height="wrap_content" />
         <Button
             android:id="@+id/mButton_mPlus"
+            android:text="@string/mPlus"
             android:layout_weight="1"
             android:layout_width="0dip"
             android:layout_height="wrap_content" />
@@ -48,7 +50,7 @@
             android:layout_width="0dip"
             android:layout_height="wrap_content" />
         </LinearLayout>
-
+    <!--第二行四个键-->
     <LinearLayout
         android:orientation="horizontal"
         android:background="#FFFFFF"
@@ -79,6 +81,7 @@
             android:layout_width="0dip"
             android:layout_height="wrap_content" />
         </LinearLayout>
+    <!--第三行四个键-->
     <LinearLayout
         android:orientation="horizontal"
         android:background="#FFFFFF"
@@ -109,4 +112,107 @@
             android:layout_width="0dip"
             android:layout_height="wrap_content" />
         </LinearLayout>
+        <!--第四排-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/mButton_Number4"
+            android:text="@string/Number4"
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/mButton_Number5"
+            android:text="@string/Number5"
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/mButton_Number6"
+            android:text="@string/Number6"
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/mButton_AdditionLog"
+            android:text="@string/AdditionLog"
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+    <!--最后两排-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:baselineAligned="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--右下角两排的5个-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:layout_weight="3"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content">
+            <!--左下角123三个按键-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:background="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/mButton_Number1"
+                    android:text="@string/Number1"
+                    android:layout_weight="1"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/mButton_Number2"
+                    android:text="@string/Number2"
+                    android:layout_weight="1"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/mButton_Number3"
+                    android:text="@string/Number3"
+                    android:layout_weight="1"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        <!--左下角的0和。两个按钮-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:background="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/mButton_Number0"
+                    android:text="@string/Number0"
+                    android:layout_weight="2"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent" />
+                <Button
+                    android:id="@+id/mButton_Point"
+                    android:text="@string/Point"
+                    android:layout_weight="1"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <!--等号-->
+        <LinearLayout
+        android:background="#FFFFFF"
+        android:layout_weight="1"
+        android:layout_width="0dip"
+        android:layout_height="match_parent">
+            <Button
+                android:id="@+id/mButton_EqualLog"
+                android:text="@string/EqualLog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>
